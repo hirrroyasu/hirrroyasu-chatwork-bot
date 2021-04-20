@@ -7,8 +7,8 @@ function chBot() {
   var strBody = "[info][title]ノッチ's セレクト「今日の1曲」[/title]" +
   mySheet.getRange(numRow,1).getValue() + " / " + mySheet.getRange(numRow,2).getValue() + "\n" + mySheet.getRange(numRow,3).getValue() + "[/info]";
 
-  var cwClient = ChatWorkClient.factory({token: 'tokenid'});
-  cwClient.sendMessage({room_id: 'roomid', body: "おはようございます:)\n今日も1日頑張りましょう！" + strBody});
+  var cwClient = ChatWorkClient.factory({token: '*********'});
+  cwClient.sendMessage({room_id: '*********', body: "おはようございます:)\n今日も1日頑張りましょう！" + strBody});
 
   mySheet.deleteRows(numRow);
 }
